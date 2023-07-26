@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import com.service.user.model.Product;
 
 
-@FeignClient(name = "service-product", url = "http://localhost:8002/product")
+@FeignClient(name = "service-product")
 public interface ProductFeignClient {
 	
 	@PostMapping("/save")
